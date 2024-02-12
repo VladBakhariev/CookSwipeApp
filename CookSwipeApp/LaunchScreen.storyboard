@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Jut-P5-6Cq">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainLogoLauch" translatesAutoresizingMaskIntoConstraints="NO" id="i4a-nZ-viv">
+                                <rect key="frame" x="76.666666666666686" y="271" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="aNF-bC-0L5"/>
+                                    <constraint firstAttribute="height" constant="240" id="cea-Bz-kFu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COOKSWIPE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDO-93-bLZ">
+                                <rect key="frame" x="73.666666666666686" y="523" width="246" height="52"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Jut-P5-6Cq" secondAttribute="bottom" id="6Lt-gv-E9V"/>
+                            <constraint firstItem="NDO-93-bLZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AF8-mT-uAb"/>
+                            <constraint firstItem="Jut-P5-6Cq" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="E6m-VF-WLL"/>
+                            <constraint firstItem="NDO-93-bLZ" firstAttribute="top" secondItem="i4a-nZ-viv" secondAttribute="bottom" constant="12" id="FZR-vc-TsI"/>
+                            <constraint firstItem="i4a-nZ-viv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-35" id="M2Q-tI-KlG"/>
+                            <constraint firstAttribute="trailing" secondItem="Jut-P5-6Cq" secondAttribute="trailing" id="NtZ-bQ-hab"/>
+                            <constraint firstItem="i4a-nZ-viv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nSG-pc-QH8"/>
+                            <constraint firstItem="Jut-P5-6Cq" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="yLz-wA-XKM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MainLogoLauch" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="background" width="800" height="533.33331298828125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
